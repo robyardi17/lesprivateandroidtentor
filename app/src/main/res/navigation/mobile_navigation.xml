@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_jadwal">
+
+    <fragment
+        android:id="@+id/navigation_jadwal"
+        android:name="com.example.lesprivatetentor.Fragment.Jadwal.JadwalFragment"
+        android:label="@string/title_jadwal"
+        tools:layout="@layout/fragment_jadwal" />
+
+    <fragment
+        android:id="@+id/navigation_bimbingan"
+        android:name="com.example.lesprivatetentor.Fragment.Bimbingan.BimbinganFragment"
+        android:label="@string/title_bimbingan"
+        tools:layout="@layout/fragment_bimbingan" />
+
+    <fragment
+        android:id="@+id/navigation_pertemuan"
+        android:name="com.example.lesprivatetentor.Fragment.Pertemuan.PertemuanFragment"
+        android:label="@string/title_pertemuan"
+        tools:layout="@layout/fragment_pertemuan" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.lesprivatetentor.Fragment.Profile.ProfileFragment"
+        android:label="@string/title_Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

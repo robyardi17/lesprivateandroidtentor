@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Registrasi.RegistrasiActivity">
+
+    <ScrollView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Tentor" />
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:maxLength="16"
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nama Lengkap"/>
+
+            <TextView
+                android:id="@+id/textViewKelamin"
+                android:paddingLeft="4dp"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+
+            </RadioGroup>
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:id="@+id/editTextPendidikanTerakhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Pendidikan Terakhir" />
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:id="@+id/editTextPendidikanBerjalan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="12"
+                android:hint="Pendidikan berjalan"
+                android:inputType="text" />
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:id="@+id/editTextNoHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nomor Handphone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email Aktif"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="16"
+                android:hint="Masukkan Username"
+                android:inputType="textPersonName" />
+
+            <com.xwray.passwordview.PasswordView
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                app:useStrikeThrough="true"/>
+
+            <com.xwray.passwordview.PasswordView
+                android:id="@+id/editTextRepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Konfirmasi Password"
+                app:useStrikeThrough="true"/>
+
+            <CheckBox
+                android:id="@+id/checkboxSetuju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saya setuju dengan persyaratan"
+                />
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/buttonDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton_wetasphalt"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Registrasi" />
+
+            <TextView
+                android:id="@+id/textViewSudahTentor"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sudah Menjadi Tentor" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
