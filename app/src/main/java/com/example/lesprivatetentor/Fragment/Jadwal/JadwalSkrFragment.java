@@ -27,7 +27,8 @@ public class JadwalSkrFragment extends Fragment {
         sharedPreferences = getActivity().getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
         String token = sharedPreferences.getString(TAG_TOKEN, "");
         getJadwalSkr = new getJadwalSkr(getActivity());
-        getJadwalSkr.getJadwalSekarang(token);
+        getJadwalSkr.token = token;
+        getJadwalSkr.getJadwalSekarang(view);
         return view;
     }
 }

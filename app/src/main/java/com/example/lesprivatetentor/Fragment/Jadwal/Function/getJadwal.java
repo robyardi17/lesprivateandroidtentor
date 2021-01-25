@@ -7,6 +7,7 @@ import android.content.Context;
 
 import com.example.lesprivatetentor.Config.ApiService;
 import com.example.lesprivatetentor.Config.Server;
+import com.example.lesprivatetentor.Fragment.Jadwal.Adapter.JadwalSekarangAdapter;
 import com.example.lesprivatetentor.Fragment.Jadwal.Model.DDLHari;
 import com.example.lesprivatetentor.Fragment.Jadwal.Model.JadwalModel;
 import com.example.lesprivatetentor.Fragment.Jadwal.Model.ListJadwal;
@@ -38,9 +39,8 @@ public class getJadwal {
             @Override
             public void onResponse(Call<JadwalModel> call, Response<JadwalModel> response) {
                 JadwalModel jadwalModel = response.body();
-                System.out.println(jadwalModel);
-                progressDialog.dismiss();
 
+                progressDialog.dismiss();
             }
 
             @Override

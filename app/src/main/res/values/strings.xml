@@ -4,5 +4,6 @@
     <string name="title_bimbingan">Bimbingan</string>
     <string name="title_pertemuan">Pertemuan</string>
     <string name="title_Profile">Profile</string>
+    <string name="text_nama">Nama</string>
     <string name="lupa_pass">Untuk melakukan reset password, silahkan masukkan Email yang telah terdaftar</string>
 </resources>

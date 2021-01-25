@@ -32,12 +32,12 @@ public class JadwalModel {
         this.jadwal = jadwal;
     }
 
-    public List<DDLHari> getDays() {
-        return (List<DDLHari>) days;
+
+    public DDLHari getDays() {
+        return days;
     }
 
     public void setDays(DDLHari days) {
         this.days = days;
     }
-
 }
